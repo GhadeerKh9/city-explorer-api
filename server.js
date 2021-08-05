@@ -6,7 +6,7 @@ const axios = require("axios");
 const cors = require("cors");
 server.use(cors());
 
-const PORT = 3070;
+const PORT = process.env.PORT;
 server.get("/weather", getWeatherHandler);
 
 // const urlServer = `http://localhost:3060/weather?name=${inputName}&lon=${this.state.long}&lat=${this.state.lat}`
